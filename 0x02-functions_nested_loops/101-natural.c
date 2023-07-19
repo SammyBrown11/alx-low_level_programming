@@ -18,6 +18,6 @@ int main(void)
         }
     }
 
-    printf("%d\n", z); // Corrected the 'Z' to 'z' in the printf statement
+    printf("%d\n", z);
     return (0);
 }
