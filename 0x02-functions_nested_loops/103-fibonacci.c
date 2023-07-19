@@ -17,15 +17,21 @@ int main(void)
 
     while (next_term <= 4000000)
     {
+        /* Calculate the next term in the Fibonacci sequence */
         next_term = prev_term + current_term;
+
+        /* Update the previous and current terms for the next iteration */
         prev_term = current_term;
         current_term = next_term;
 
+        /* Check if the next term is even and add it to the sum if true */
         if (next_term % 2 == 0)
         {
             sum_even_terms += next_term;
         }
     }
+
+    /* Print the sum of even-valued terms */
     printf("%d\n", sum_even_terms);
 
     return 0;
